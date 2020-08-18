@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Dashboard</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
 
@@ -17,18 +18,74 @@
             <div class="dashboard-view">
 
                 <div class="search-notification">
-                    <div class="search-bar">
-
-                        <input type="text" name="search-bar" placeholder="Search your vehicle number, parcel, driver name, ...">
-
-                    </div>
-
-                    <div class="notification">
-
-                        <a> Notification</a>
-
-                    </div>
+                    <input type="text" name="search-bar" placeholder="Search your vehicle number, parcel, driver name, ...">
+                    <a class="ml-3"> <img src="./assets/icons/ic_notification.svg" alt="notification" class="inline" style="verticle-align:middle"> Notification</a>
                 </div>
+
+                <!-- welcome view -->
+
+                <div class="welcome-view mt-12">
+
+                    <div class="parcel-tracker">
+                        <h2 class="text-grey text-3xl font-black">
+                            Welcome Back, <span class="text-orange">Supervisor!</span>
+                        </h2>
+
+                        <div class="parcel-search text-white py-16 px-6 mt-4">
+                            <p class="font-bold">Enter your parcel number <br>
+                            to track your deliveries</p>
+                            <input type="text" class="text-xs w-auto text-grey px-4 py-3 mt-4 rounded-lg" placeholder="Enter parcel number here"/>
+                            <button class="font-bold rounded-lg px-4 py-2" style="background: #ff3434;"> Submit </button>
+                        </div>
+
+                    </div>
+
+                    <div class="driver-details p-6 bg-white">
+
+                        <div class="date-time flex flex-row " >
+
+                            <div class="time text-xl font-bold">
+                                <img src="./assets/icons/ic_clock.svg"  style="verticle-align:middle" class="inline mr-1" alt="clock">
+                                3:50 PM
+                            </div>
+
+                            <div class="date ml-auto text-sm font-bold">
+                                <img src="./assets/icons/ic_calendar.svg" class="inline" alt="ic_calendar">
+                                6th Aug 2020
+                            </div>
+
+                        </div>
+
+                        <div class="driver flex flex-row mt-6 justify-end">
+                            <div class="driver-name text-right">
+                                <p class="text-grey text-sm"> Supervisor </p>
+                                <p class="text-2xl font-black  " style="color:#212121;"> Mahesh Kumar </p>
+                                <img src="./assets/icons/ic_settings.svg" class="inline"/>
+                            </div>
+                            <img class="photo ml-3" src="https://i.gadgets360cdn.com/large/mark_zuckerberg_full_1573803770292.JPG" class=""/>
+                        </div>
+
+                        <div class="location text-center mt-6">
+                            <p class=" font-bold" style="color:#212121;"> <img class="inline"  src="./assets/icons/ic_location_marker.svg" alt="location-icon"> Warehouse, Gurgaon </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- welcome view -->
+
+                <!-- total vehicles -->
+
+                <div class="flex flex-row mt-12">
+
+                    <p class="text-3xl font-bold text-grey">Your Vehicles</p>
+                    <p class="ml-auto  text-lg pt-2 px-4 rounded-full" style="color:#212121; border: 1px solid #212121;"> Total Count: <span class="font-bold"> 10 </span> </p>
+
+                </div>
+
+                <!-- total vehicles -->
+
 
             </div>
 

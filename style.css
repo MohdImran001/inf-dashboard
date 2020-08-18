@@ -1,0 +1,64 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove Padding on small devices */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    border: 1px solid #999;
+    height: 400px;
+}
+
+.navbar {
+    border: 1px solid #999;
+}
+
+.dashboard-view {
+    border: 1px solid #999;
+}
+
+.vehicle-details {
+    border: 1px solid #999;
+}
+
+.search-notification {
+    display: flex;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.search-bar {
+    width: 90%;
+    border: 1px solid #999;
+    text-align: center;
+}
+/* FEEADC , 797979, 707070, ff7f34*/
+.search-bar input{
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size:14px;
+    border: 2px solid #FEEADC;
+}
+
+.notification {
+    width: 15%;
+    border: 1px solid #999;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.notification a {
+    border: 1px solid #ff7f34;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ff7f34;
+}

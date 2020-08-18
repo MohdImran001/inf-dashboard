@@ -13,20 +13,20 @@ body {
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
     height: 400px;
 }
 
 .navbar {
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
 }
 
 .dashboard-view {
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
 }
 
 .vehicle-details {
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
 }
 
 .search-notification {
@@ -37,7 +37,7 @@ body {
 
 .search-bar {
     width: 90%;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
     text-align: center;
 }
 /* FEEADC , 797979, 707070, ff7f34*/
@@ -51,7 +51,7 @@ body {
 
 .notification {
     width: 15%;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
     text-align: center;
     padding-top: 15px;
 }

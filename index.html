@@ -15,7 +15,7 @@
 
             </div>
 
-            <div class="dashboard-view">
+            <div class="dashboard-view" style="background: #eee">
 
                 <div class="search-notification">
                     <input type="text" name="search-bar" placeholder="Search your vehicle number, parcel, driver name, ...">
@@ -27,15 +27,15 @@
                 <div class="welcome-view mt-12">
 
                     <div class="parcel-tracker">
-                        <h2 class="text-grey text-3xl font-black">
+                        <h2 class="text-grey text-2xl font-black">
                             Welcome Back, <span class="text-orange">Supervisor!</span>
                         </h2>
 
                         <div class="parcel-search text-white py-16 px-6 mt-4">
                             <p class="font-bold">Enter your parcel number <br>
                             to track your deliveries</p>
-                            <input type="text" class="text-xs w-auto text-grey px-4 py-3 mt-4 rounded-lg" placeholder="Enter parcel number here"/>
-                            <button class="font-bold rounded-lg px-4 py-2" style="background: #ff3434;"> Submit </button>
+                            <input type="text" class="text-xs w-auto text-grey px-4 py-3 mt-4 rounded-lg" style="width: 70%;" placeholder="Enter parcel number here"/>
+                            <button class="ml-2 font-bold rounded-lg px-4" style="background: #ff3434; padding-top:.6rem; padding-bottom: .7rem;"> Submit </button>
                         </div>
 
                     </div>
@@ -79,17 +79,180 @@
 
                 <div class="flex flex-row mt-12">
 
-                    <p class="text-3xl font-bold text-grey">Your Vehicles</p>
-                    <p class="ml-auto  text-lg pt-2 px-4 rounded-full" style="color:#212121; border: 1px solid #212121;"> Total Count: <span class="font-bold"> 10 </span> </p>
+                    <p class="text-2xl font-bold text-grey">Your Vehicles</p>
+                    <p class="ml-auto  text-sm pt-2 px-4 rounded-full" style="color:#212121; border: 1px solid #212121;"> Total Count: <span class="font-bold"> 10 </span> </p>
+
+                </div>
+
+                <div class="vehicle-details mt-8">
+
+                    <div class="table w-full">
+                        <div class="table-row-group">
+
+                            <div class="table-row font-bold">
+                                <div class="table-cell text-sm">
+
+                                </div>
+                                <div class="table-cell text-md" style="color:#212121;">
+                                    Vehicle No.
+                                </div>
+                                <div class="table-cell text-md pl-16" style="color:#212121;">
+                                    Date
+                                </div>
+                                <div class="table-cell text-md " style="color:#212121;">
+                                    Status
+                                </div>
+                                <div class="table-cell text-md " style="color:#212121;">
+                                    <div class="flex flex-row">
+                                        <p class="text-sm font-bold  text-orange px-3 p-1 rounded shadow border-orange" style="background-color:#FEEADC; cursor:pointer">
+                                            Sort
+                                        </p>
+                                        <p class="text-sm font-bold ml-3 text-orange px-3 p-1 rounded shadow border-orange" style="background-color:#FEEADC; cursor:pointer">
+                                            Filter
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="table-row bg-white shadow rounded-full vehicles" >
+                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
+                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
+                                    Vehicle 1
+                                </div>
+                                <div class="table-cell text-xs align-middle text-center font-bold w-48" style="position:relative" >
+                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
+                                    <p style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">RJ 02 GB 2222</p>
+                                </div>
+                                <div class="table-cell text-md align-middle text-grey font-bold pl-16" >
+                                    6 Jul 2020
+                                </div>
+                                <div class="table-cell text-md align-middle font-bold ">
+                                    <img src="./assets/icons/progress_tag.png" class="w-32" alt="in-progress">
+                                </div>
+                                <div class="table-cell text-md text-orange align-middle font-bold ">
+                                    <a href="" class="underline">View Details > </a>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="table-row hover:bg-white hover:shadow vehicles" style="border-radius: 7px;">
+                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
+                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
+                                    Vehicle 2
+                                </div>
+                                <div class="table-cell text-xs align-middle text-center font-bold w-48" style="position:relative" >
+                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
+                                    <p style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">HR 1G 1JGD6S</p>
+                                </div>
+                                <div class="table-cell text-md align-middle text-grey font-bold pl-16" >
+                                    6 Jul 2020
+                                </div>
+                                <div class="table-cell text-sm align-middle font-bold ">
+                                    <img src="./assets/icons/dipatched_tag.png" class="w-32" alt="dispatched">
+                                </div>
+                                <div class="table-cell text-md text-orange align-middle font-bold ">
+                                    <a href="" class="underline">View Details > </a>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
+                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
+                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
+                                    Vehicle 3
+                                </div>
+                                <div class="table-cell text-xs align-middle text-center font-bold w-48" style="position:relative" >
+                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
+                                    <p style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">HR 1G 1JGD6S</p>
+                                </div>
+                                <div class="table-cell text-md align-middle text-grey font-bold pl-16" >
+                                    6 Jul 2020
+                                </div>
+                                <div class="table-cell text-sm align-middle font-bold ">
+                                    <img src="./assets/icons/delayed_tag.png" class="w-32" alt="delayed">
+                                </div>
+                                <div class="table-cell text-md text-orange align-middle font-bold ">
+                                    <a href="" class="underline">View Details > </a>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
+                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
+                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
+                                    Vehicle 4
+                                </div>
+                                <div class="table-cell text-xs align-middle text-center font-bold w-48" style="position:relative" >
+                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
+                                    <p style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">HR 1G 1JGD6S</p>
+                                </div>
+                                <div class="table-cell text-md align-middle text-grey font-bold pl-16" >
+                                    6 Jul 2020
+                                </div>
+                                <div class="table-cell text-sm align-middle font-bold ">
+                                    <img src="./assets/icons/progress_tag.png" class="w-32" alt="in-progress">
+                                </div>
+                                <div class="table-cell text-md text-orange align-middle font-bold ">
+                                    <a href="" class="underline">View Details > </a>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
+                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
+                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
+                                    Vehicle 5
+                                </div>
+                                <div class="table-cell text-xs align-middle text-center font-bold w-48" style="position:relative" >
+                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
+                                    <p style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">HR 1G 1JGD6S</p>
+                                </div>
+                                <div class="table-cell text-md align-middle text-grey font-bold pl-16" >
+                                    6 Jul 2020
+                                </div>
+                                <div class="table-cell text-sm align-middle font-bold ">
+                                    <img src="./assets/icons/progress_tag.png" class="w-32" alt="in-progress">
+                                </div>
+                                <div class="table-cell text-md text-orange align-middle font-bold ">
+                                    <a href="" class="underline">View Details > </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="heading flex flex-row"> -->
+                        <!-- <div class="flex flex-row justify-end"> -->
+                            <!-- <p class="text-sm font-bold ml-56" style="color:#212121;">Vehicle No.</p> -->
+                            <!-- <p class="text-sm font-bold ml-32" style="color:#212121;">Date</p> -->
+                            <!-- <p class="text-sm font-bold ml-32" style="color:#212121;">Status</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="flex flex-row justify-end space-x-2"> -->
+                            <!-- <p class="text-sm font-bold  ml-auto text-orange px-3 p-1 rounded" style="background-color:#FEEADC; cursor:pointer">Sort</p> -->
+                            <!-- <p class="text-sm font-bold ml-2 text-orange px-3 p-1 rounded" style="background-color:#FEEADC; cursor:pointer">Filter</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                    <!-- <ul style="list-style:none" class="mt-10"> -->
+                        <!-- <li> -->
+                            <!-- <img src="" alt="">
+                             <p>Vehicle 1</p>
+                             <p> <span> RJ 02 GB 2222 </span> </p>
+                             <p> 6 Jul 2020 </p>     >
+                             <img src="" alt="">
+                            <p>View Details</p>
+                         </li> -->
+                    <!-- </ul> -->
 
                 </div>
 
                 <!-- total vehicles -->
 
-
-            </div>
-
-            <div class="vehicle-details">
 
             </div>
 

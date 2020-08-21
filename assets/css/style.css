@@ -19,8 +19,6 @@ body {
 }
 
 .dashboard-view {
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: #fafafa;
 }
 
@@ -135,6 +133,10 @@ body {
 
 .bg-red {
     color: #ff3434;
+}
+
+.bg-blue {
+    background-color: #348AFF;
 }
 
 .bg-orange {

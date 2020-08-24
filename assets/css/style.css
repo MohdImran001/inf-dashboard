@@ -143,6 +143,18 @@ body {
     background-color: #ff7f34;
 }
 
+.bg-green {
+    background-color: #34d677;
+}
+
+.bg-gray {
+    background: #e5e6ea;
+}
+
+.border-gray {
+    border: 4px solid #e5e6ea;
+}
+
 .shadow {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }

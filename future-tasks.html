@@ -18,11 +18,11 @@
                     <img src="./assets/icons/brand_logo.png" class="w-24 inline" alt="Haul Logo">
                 </div>
                 <div class="today-tasks mt-24 " style="position: relative">
-                    <span class="w-1 bg-orange h-16 inline-block  ml-0 rounded" style="position: absolute"></span>
                     <img src="./assets/icons/tab_today_task.svg"  style="verticle-align:middle" class="w-24 inline ml-4" alt="Today Tasks">
                 </div>
                 <div class="future-tasks mt-10 ">
-                    <img src="./assets/icons/tab_future_task_unseleted.svg" class="w-24 inline" alt="Future Tasks">
+                    <span class="w-1 bg-orange h-16 inline-block  ml-0 rounded" style="position: absolute"></span>
+                    <img src="./assets/icons/tab_future_task_selected.svg" class="w-24 inline ml-4" alt="Future Tasks">
                 </div>
                 <div class="completed-tasks mt-10 ">
                     <img src="./assets/icons/tab_completed_unselected.svg" class="w-24 inline" alt="Today Tasks">
@@ -110,9 +110,9 @@
                         <div class="table-row-group">
 
                             <div class="table-row font-bold" >
-                                <div class="table-cell text-sm">
-
-                                </div><div class="table-row font-bold"
+                                <div class="table-cell text-sm text-center">
+                                    <p class="bg-black shadow text-white p-1 py-2 rounded-lg w-24 text-center ml-8" style="cursor: pointer">ALL</p>
+                                </div>
                                 <div class="table-cell text-md" style="color:#212121;">
                                     Vehicle No.
                                 </div>
@@ -123,20 +123,21 @@
                                     Status
                                 </div>
                                 <div class="table-cell text-md " style="color:#212121;">
-                                    <img src="./assets/icons/ic_sort.svg" alt="sort-button" class="w-16 inline" style="cursor:pointer">
-                                    <img src="./assets/icons/ic_filter.svg" alt="filter-btn" class="w-16 inline" style="cursor:pointer">
+                                    <img src="./assets/icons/c_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
+                                    <img src="./assets/icons/r_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
+                                    <img src="./assets/icons/p_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
                                 </div>
                             </div>
                             <br>
 
-                            <div class="table-row bg-white   vehicles" >
+                            <div class="table-row bg-white shadow  vehicles" >
                                 <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
                                     <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="parcel-box">
                                     Vehicle 1
                                 </div>
                                 <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
                                     <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p class=" number-plate" >
+                                    <p  class=" number-plate" >
                                         RJ 02 GB 2222
                                     </p>
                                 </div>
@@ -147,7 +148,7 @@
                                     <img src="./assets/icons/progress_tag.png" class="w-32" alt="in-progress">
                                 </div>
                                 <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline view-details">View Details > </a>
+                                    <a href="" class="underline">View Details > </a>
                                 </div>
                             </div>
 
@@ -254,7 +255,7 @@
             <div class="vehicle-information ">
 
                 <div class="vehicle-info pt-12 pl-8">
-                    <h1 class="text-lg font-extrabold">Vehicle Information</h1>
+                    <h1 class="text-md font-extrabold">Vehicle Information</h1>
                     <div class="flex flex-row mt-6">
                         <img src="./assets/icons/truck.svg" alt="truck-logo">
                         <div class="ml-4">
@@ -310,89 +311,204 @@
                 <!-- Driver Info Card -->
 
 
-                <!-- Vehicle Progress Bar -->
 
-                <div class="progress-bar ml-10 mt-10">
+                <!-- Confirmation for availability of load -->
 
-                    <!-- Arrival progress -->
-                    <div class="flex flex-row">
-                        <div class="bg-green h-6 w-6 pt-1 pl-1 pr-1 pb-1 rounded-full mt-3">
-                            <img src="./assets/icons/ic_tick.svg" alt="completed">
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-black text-md font-bold">ARRIVAL</p>
-                            <p class="text-grey text-xs">Location A, Noida <span class="text-black ml-10"> 7 July, 9:30 AM</span> </p>
-                        </div>
+                <div class="w-350px" id="confirmation-box" >
+                    <!-- Loading/Unloading Info -->
+                    <div class="ml-8 mt-6" >
+
+                        <h6 class="text-grey text-sm font-bold">ETA</h6>
+                        <p class="text-black font-bold">19/06/20 @ 10:00 AM</p>
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <h6 class="text-grey text-sm font-bold">UNLOADING</h6>
+                        <p class="text-black font-bold">Starts @ 10:25 AM</p>
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <h6 class="text-grey text-sm font-bold">LOADING</h6>
+                        <p class="text-black font-bold">Starts @ 12:00 PM</p>
+
+                        <hr class="bg-grey w-32 mt-2" style="border: 1px solid #e5e6ea">
+
                     </div>
-                    <!-- Arrival progress -->
+                    <!-- Loading/Unloading Info -->
 
-                    <!-- Arrival to Unloading Progress Bar-->
-                    <div class="h-20 w-2 rounded-full bg-gray ml-2">
-                        <!-- This div denotes the progress with green background -->
-                        <div class="h-20 w-2 rounded-full bg-green ">
 
+                    <div class="ml-1 mt-3  p-2 text-center w-350px ">
+
+                        <p class="-px-1 py-6 rounded-lg text-xs text-grey font-bold" style="border: 1px solid #e5e6ea">DO YOU CONFIRM THE AVAILABILITY OF LOAD ?</p>
+                        <br>
+
+                        <!-- Load Status Button -->
+                        <button id="load-status-btn" class="bg-black text-xs shadow text-white px-2 py-3 mt-3 rounded-lg text-center w-32 font-black m-auto" style="cursor: pointer">
+                            LOAD &nbsp; STATUS
+                        </button>
+                        <!-- Load Status Button -->
+                        <!-- Hidden Status , will display when user click load status btn-->
+                        <div class="mt-8 hidden" id="status-table">
+                            <table class="table-fixed text-xs m-auto status-table">
+                                <thead>
+                                    <tr>
+                                        <th class="px-3 py-2 ">Date</th>
+                                        <th class="px-3 py-2 ">Commodity</th>
+                                        <th class="px-3 py-2 ">Quantity</th>
+                                        <th class="px-3 py-2 ">Destination</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="px-3 py-2 ">20.06.20</td>
+                                        <td class="px-3 py-2 ">SPLIT AC</td>
+                                        <td class="px-3 py-2 ">64</td>
+                                        <td class="px-3 py-2 ">GURGAON</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                        <!-- Hidden Status , will display when user click load status btn-->
+
+
+                        <!-- yes/no button -->
+                        <div class="flex flex-row mt-3 py-8 px-10">
+                            <button class="bg-blue py-1 px-8 rounded-full text-white font-bold pointer shadow" id="yes">Yes</button>
+                            <button class="ml-auto bg-red py-1 px-8 rounded-full text-white font-bold pointer shadow" id="no">No</button>
+                        </div>
+                        <!-- yes/no button -->
+
                     </div>
-                    <!-- Arrival to Unloading Progress Bar-->
+                </div>
 
-                    <!-- Unloading progress -->
-                    <div class="flex flex-row -mt-2">
-                        <div class="bg-green h-6 w-6 pt-1 pl-1 pr-1 pb-1 rounded-full mt-3">
-                            <img src="./assets/icons/ic_truck_small_stepper.svg" alt="completed">
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-black text-md font-bold">UNLOADING</p>
-                            <p class="text-grey text-xs">Location B, Noida <span class="text-black ml-10"> 7 July, 11:30 AM</span> </p>
-                        </div>
+                <!-- Confirmation for availability of load -->
+
+
+
+
+                <!-- Confirmed Box => this will display when the user clicks the yes button -->
+
+                <div class="hidden w-350px" id="confirmed-box">
+                    <!-- Loading/Unloading Info -->
+                    <div class="ml-8 mt-6" >
+
+                        <h6 class="text-grey text-sm font-bold">ETA</h6>
+                        <p class="text-black font-bold">19/06/20 @ 10:00 AM</p>
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <h6 class="text-grey text-sm font-bold">UNLOADING</h6>
+                        <p class="text-black font-bold">Starts @ 10:25 AM</p>
+                        <p class="text-black font-bold">Ends @ 12:00 PM</p>
+
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <h6 class="text-grey text-sm font-bold">LOADING</h6>
+                        <p class="text-black font-bold">Starts @ 12:00 PM</p>
+                        <p class="text-black font-bold">Ends @ 13:15 PM</p>
+
+                        <hr class="bg-grey w-32 mt-2" style="border: 1px solid #e5e6ea">
+
+                        <br>
+
+                        <p class="p-2 px-4 rounded-lg text-sm w-64 text-grey font-bold" style="border: 2px solid #e5e6ea">
+                            Vehicle leaves the warehouse LW1
+                             <span class="text-black"> @ 13:40 PM </span>
+                        </p>
+
+                        <br>
+
+                        <button class="bg-blue py-2 px-8 ml-40 rounded-full text-sm text-white font-bold pointer shadow">
+                            DONE
+                        </button>
+
                     </div>
-                    <!-- Unloading progress -->
-
-                    <!--  Unloading to Loading Progress Bar-->
-                    <div class="h-20 w-2 rounded-full bg-green ml-2 bg-gray">
-                        <!-- This div denotes the progress with green background -->
-                        <div class="h-12 w-2 rounded-full bg-green ">
-
-                        </div>
-                    </div>
-                    <!--  Unloading to Loading Progress Bar-->
-
-
-                    <!-- Loading progress -->
-                    <div class="flex flex-row -mt-2">
-                        <div class="bg-white h-3 w-3 p-2 rounded-full mt-3 border-gray" >
-                            <!-- <img src="./assets/icons/ic_truck_small_stepper.svg" alt="completed"> -->
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-black text-md font-bold">UNLOADING</p>
-                            <p class="text-grey text-xs">Location C, Noida <span class="text-black ml-10"> 7 July, 12:10 AM</span> </p>
-                        </div>
-                    </div>
-                    <!-- Loading progress -->
-
-                    <!--  Loading to Departure  Progress Bar-->
-                    <div class="h-20 w-2 rounded-full bg-green ml-2 bg-gray">
-                        <!-- This div denotes the progress with green background -->
-                        <div class="h-0 w-2 rounded-full bg-green ">
-
-                        </div>
-                    </div>
-                    <!--  Loading to Departure  Progress Bar-->
-
-                    <!-- Departure progress -->
-                    <div class="flex flex-row -mt-2">
-                        <div class="bg-white h-3 w-3 p-2 rounded-full mt-3 border-gray" >
-                            <!-- <img src="./assets/icons/ic_truck_small_stepper.svg" alt="completed"> -->
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-black text-md font-bold">DEPARTURE</p>
-                            <p class="text-grey text-xs">Location C, Noida <span class="text-black ml-10"> 7 July, 14:30 AM</span> </p>
-                        </div>
-                    </div>
-                    <!-- Departure progress -->
+                    <!-- Loading/Unloading Info -->
 
                 </div>
 
-                <!-- Vehicle Progress Bar -->
+                <!-- Confirmed Box => this will display when the user clicks the yes button -->
+
+
+
+
+
+                <!-- rejected message box => this will be displayed when user click no button in confirmation box-->
+
+                <div id="rejected-message-box" class="mt-8 ml-2 p-4 hidden w-350px">
+                    <p class="text-grey text-sm font-bold">
+                         Oops ! We were sure of picking up AA Tons of commodity xxx to be transported to Warehouse
+                         MW3 on 19.06.20
+                     </p>
+                     <br>
+                     <p class="text-black text-sm font-bold">
+                         Please mention the reason for unavailibility of load
+                     </p>
+
+                     <textarea name="rejection-message" rows="4" cols="30" class="textarea text-sm" >
+                         MW3 did not indent the load on time. We will recieve commodity xxx on 21.06.20
+                     </textarea>
+
+
+
+                     <button class="bg-blue py-2 px-8 ml-48 mt-10 rounded-full text-sm text-white font-bold pointer shadow" id="submit-message">
+                         Submit
+                     </button>
+                </div>
+
+                <!-- rejected message box => this will be displayed when user click no button in confirmation box-->
+
+
+
+
+
+                <!-- rejection box => this will be displayed when user submits the message for rejection of load in rejection-message box -->
+
+                <div id="rejection-box" class="hidden w-350px">
+                    <!-- Loading/Unloading Info -->
+                    <div class="ml-8 mt-6 pr-6" >
+
+                        <p class="text-lg font-black bg-red text-white py-2 w-12 pl-2 rounded-md">NA</p>
+
+                        <br>
+
+                        <h6 class="text-grey text-sm font-bold">ETA</h6>
+                        <p class="text-black font-bold">19/06/20 @ 10:00 AM</p>
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <h6 class="text-grey text-sm font-bold">UNLOADING</h6>
+                        <p class="text-black font-bold">Starts @ 10:25 AM</p>
+                        <p class="text-black font-bold">Ends @ 12:00 PM</p>
+
+
+                        <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
+
+                        <br>
+
+                        <p class="text-black text-sm font-bold">
+                            Vehicle leaves the Warehouse @ 13:10 PM because
+                        </p>
+
+                        <br>
+
+                        <p class="text-grey text-sm px-3 py-2 font-bold rounded-md" style="border: 1px solid #999">
+                            MW3 did not indent the load on time. We will recieve commodity xxx on 21.06.20
+                        </p>
+
+                        <br>
+
+                        <button class="bg-blue py-2 px-8 ml-48  rounded-full text-sm text-white font-bold pointer shadow">
+                            OKAY
+                        </button>
+
+                    </div>
+                    <!-- Loading/Unloading Info -->
+                </div>
+
+                <!-- rejection box => this will be displayed when user submits the message for rejection of load in rejection-message box -->
+
 
             </div>
             <!-- Vehicle Information -->
@@ -400,6 +516,7 @@
 
         </div>
 
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="./assets/js/app.js"></script>
     </body>
 </html>

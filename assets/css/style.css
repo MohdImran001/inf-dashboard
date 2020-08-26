@@ -90,14 +90,14 @@ body {
 
 .vehicle-info {
     background-color: #FEEADC;
-    width: 330px;
+    width: 350px;
     height: 300px;
     color: #707070;
     letter-spacing: 1px;
 }
 
 .driver-information {
-    width: 300px;
+    width: 320px;
 }
 
 .badge {
@@ -108,6 +108,31 @@ body {
     border-radius: 50%;
     background-color: #ff7f34;
     color: white;
+}
+
+.vehicles:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vehicles {
+    position: relative;
+}
+
+.status-table th {
+    background-color: #212121;
+    color: #fff;
+    border: 1px solid #999;
+}
+
+.status-table td {
+    border: 1px solid #999;
+}
+
+.textarea {
+    border: 1px solid #999;
+    margin-top: 15px;
+    padding: 10px;
+    color: #707070;
 }
 
 .text-orange {
@@ -123,6 +148,10 @@ body {
     border-radius: 2px;
 }
 
+.w-350px {
+    width: 350px;
+}
+
 .text-grey {
     color: #707070;
 }
@@ -131,8 +160,12 @@ body {
     color: #212121;
 }
 
+.bg-black {
+    background-color: #212121;
+}
+
 .bg-red {
-    color: #ff3434;
+    background-color: #ff3434;
 }
 
 .bg-blue {
@@ -159,6 +192,6 @@ body {
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.vehicles:hover {
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+.pointer {
+    cursor: pointer;
 }

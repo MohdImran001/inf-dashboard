@@ -13,6 +13,6 @@
       <path id="Path_61-2" data-name="Path 61" d="M9.567,0H76.533C81.816,0,86.1,2.239,86.1,5V42c0,2.761-4.283,5-9.567,5H9.567C4.283,47,0,44.761,0,42V5C0,2.239,4.283,0,9.567,0Z" transform="translate(9 6)" fill="#feede3"/>
     </g>
     <path id="Icon_material-filter-list" data-name="Icon material-filter-list" d="M12.89,23.382h4.794v-2.4H12.89ZM4.5,9v2.4H26.073V9Zm3.6,8.39H22.478v-2.4H8.1Z" transform="translate(1168.422 527.809)" fill="#fe640f"/>
-    <text id="Filter" transform="translate(1204.208 549)" fill="#fe640f" font-size="16" font-family="VisueltPro-Regular, Visuelt Pro"><tspan x="0" y="0">Filter</tspan></text>
+    <text id="Filter" transform="translate(1204.208 549)" fill="#fe640f" font-size="16" font-family="Lato, 'sans-serif'"><tspan x="0" y="0">Filter</tspan></text>
   </g>
 </svg>

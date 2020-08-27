@@ -44,26 +44,26 @@
                     </div>
                 </div>
                 <div class="completed-tasks mt-10 flex flex-row">
-                    <div class="w-1 bg-orange h-16  rounded ml-auto"></div>
+                    <div class="w-1 bg-orange h-16  rounded ml-auto hidden"></div>
 
                     &nbsp;&nbsp;&nbsp;
 
-                    <div class=" p-2 text-sm rounded-md navs text-center w-24" style="background-color: #FEEADC">
-                        <a href="./completed.html" class="text-orange">
-                            <img src="./assets/icons/ic_completed_task_icon_on.svg"  class="inline" alt="Future Tasks">
+                    <div class=" ml-auto p-2 text-sm rounded-md navs text-center w-24" >
+                        <a href="./completed.html" class="text-grey">
+                            <img src="./assets/icons/ic_completed_task_icon.svg"  class="inline" alt="Completed Tasks">
                             <br>
                             <b>Completed</b>
                         </a>
                     </div>
                 </div>
                 <div class="rejected-tasks mt-10 flex flex-row">
-                    <div class="w-1 bg-orange h-16  rounded ml-auto hidden"></div>
+                    <div class="w-1 bg-orange h-16  rounded ml-auto "></div>
 
                     &nbsp;&nbsp;&nbsp;
 
-                    <div class=" ml-auto p-2 text-sm rounded-md navs text-center w-24">
-                        <a href="./rejected.html" class="text-grey">
-                            <img src="./assets/icons/ic_rejected_task_icon.svg"  class="inline " alt="Future Tasks">
+                    <div class="  p-2 text-sm rounded-md navs text-center w-24" style="background-color: #FEEADC">
+                        <a href="./rejected.html" class="text-orange">
+                            <img src="./assets/icons/ic_rejected_task_icon_on.svg"  class="inline " alt="Rejected Tasks">
                             <br>
                             <b>Rejected</b>
                         </a>
@@ -288,7 +288,7 @@
             <!-- Middle View - Dashboard -->
 
 
-            <!-- Vehicle Information -->
+            <!-- RIGHT SIDE VIEW => VehicleInformation -->
 
             <div class="vehicle-information ">
 
@@ -348,10 +348,13 @@
                 </div>
                 <!-- Driver Info Card -->
 
-                <div class="w-350px"  >
-
+                <div  class=" w-350px">
                     <!-- Loading/Unloading Info -->
-                    <div class="ml-8 mt-6" >
+                    <div class="ml-8 mt-6 pr-6" >
+
+                        <p class="text-lg font-black bg-red text-white py-2 w-12 pl-2 rounded-md">NA</p>
+
+                        <br>
 
                         <h6 class="text-grey text-sm font-bold">ETA</h6>
                         <p class="text-black font-bold">19/06/20 @ 10:00 AM</p>
@@ -360,42 +363,25 @@
 
                         <h6 class="text-grey text-sm font-bold">UNLOADING</h6>
                         <p class="text-black font-bold">Starts @ 10:25 AM</p>
+                        <p class="text-black font-bold">Ends @ 12:00 PM</p>
+
 
                         <hr class="bg-grey w-32 mt-2 mb-2" style="border: 1px solid #e5e6ea">
 
-                        <h6 class="text-grey text-sm font-bold">LOADING</h6>
-                        <p class="text-black font-bold">Starts @ 12:00 PM</p>
+                        <br>
 
-                        <hr class="bg-grey w-32 mt-2" style="border: 1px solid #e5e6ea">
+                        <p class="text-black text-sm font-bold">
+                            Vehicle leaves the Warehouse @ 13:10 PM because
+                        </p>
+
+                        <br>
+
+                        <p class="text-grey text-sm px-3 py-2 font-bold rounded-md" style="border: 1px solid #999">
+                            MW3 did not indent the load on time. We will recieve commodity xxx on 21.06.20
+                        </p>
 
                     </div>
                     <!-- Loading/Unloading Info -->
-
-                    <!-- Status Table -->
-                    <div class="ml-1 mt-3  p-2 text-center w-350px ">
-                        <div class="mt-8" id="status-table">
-                            <table class="table-fixed text-xs m-auto status-table">
-                                <thead>
-                                    <tr>
-                                        <th class="px-3 py-2 ">Date</th>
-                                        <th class="px-3 py-2 ">Commodity</th>
-                                        <th class="px-3 py-2 ">Quantity</th>
-                                        <th class="px-3 py-2 ">Destination</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="px-3 py-2 ">20.06.20</td>
-                                        <td class="px-3 py-2 ">SPLIT AC</td>
-                                        <td class="px-3 py-2 ">64</td>
-                                        <td class="px-3 py-2 ">GURGAON</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- Status Table -->
-
                 </div>
 
 

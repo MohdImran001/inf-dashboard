@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     // this code hides and show the status table when load status btn is clicked
     let f = -1;
     $('#load-status-btn').click(function() {
@@ -33,4 +32,14 @@ $(document).ready(function() {
         $('#rejection-box').show();
     });
 
+
+    //this code hides and shows the horizontal progress bar of parcel when user click view details button on vehicle info Card\
+    let flag = -1;
+    $('#view-details').click(function() {
+        if(flag == -1)
+            $('#vehicle-horizontal-progress').css("display", "flex");
+        else
+            $('#vehicle-horizontal-progress').css("display", "none");
+        flag *= -1;
+    })
 });

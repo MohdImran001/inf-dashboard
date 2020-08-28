@@ -12,7 +12,7 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 870px 1fr;
+    grid-template-columns: .5fr 3fr 1fr;
 }
 
 .navs:hover {
@@ -26,9 +26,7 @@ body {
     background-color: #fafafa;
 }
 
-.vehicle-details {
 
-}
 
 .search-notification {
     margin-top: 30px;
@@ -100,6 +98,13 @@ body {
     letter-spacing: 1px;
 }
 
+.vehicle-info-card {
+    border: 2px solid #ff7f34;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+}
+
 .driver-information {
     width: 320px;
 }
@@ -162,6 +167,10 @@ body {
 
 .text-black {
     color: #212121;
+}
+
+.circle {
+    border: 5px solid #e5e6ea;
 }
 
 .bg-black {

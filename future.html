@@ -143,143 +143,339 @@
 
                 </div>
 
-                <div class="vehicle-details mt-8">
+                <div class="vehicle-details mt-8 pl-3">
 
-                    <div class="table w-full">
-                        <div class="table-row-group">
+                    <div class="grid grid-cols-5 p-3 text-black text-sm font-bold text-center heading">
+                        <p class="bg-black shadow text-white  text-sm  rounded-lg w-20 h-10 text-center ml-8" style="cursor: pointer">ALL</p>
+                        <p>Vehicle No.</p>
+                        <p>Date</p>
+                        <p>Status</p>
+                        <div class="flex flex-row">
+                            <img src="./assets/icons/c_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
+                            <img src="./assets/icons/r_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
+                            <img src="./assets/icons/p_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">                        </div>
+                    </div>
 
-                            <div class="table-row font-bold" >
-                                <div class="table-cell text-sm text-center">
-                                    <p class="bg-black shadow text-white p-1 py-2 rounded-lg w-24 text-center ml-8" style="cursor: pointer">ALL</p>
-                                </div>
-                                <div class="table-cell text-md" style="color:#212121;">
-                                    Vehicle No.
-                                </div>
-                                <div class="table-cell text-md pl-10" style="color:#212121;">
-                                    Date
-                                </div>
-                                <div class="table-cell text-md " style="color:#212121;">
-                                    Status
-                                </div>
-                                <div class="table-cell text-md " style="color:#212121;">
-                                    <img src="./assets/icons/c_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
-                                    <img src="./assets/icons/r_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
-                                    <img src="./assets/icons/p_btn.svg" alt="confirmed_btn" class="w-12 inline" style="cursor:pointer">
+                    <!-- vehicle 1 -->
+                    <div class="vehicle-info-card-active vehicle-info-card grid grid-cols-5 p-3 mb-4 text-grey font-bold  text-sm text-center" id="vehicle-info-card">
+                        <div class="text-left">
+                            <img src="./assets/icons/ic-parcel_box.png" alt="parcel-box" class="inline w-16" style="vertical-align: middle">
+                            Vehicle 1
+                        </div>
+                        <div class="relative pt-2" >
+                            <img src="./assets/icons/number_plate.svg" class="w-40 inline" alt="number_plate">
+                            <p class=" number-plate text-black">DL 13S 7817 </p>
+                        </div>
+                        <div class="pt-4 text-center">
+                            <p>6 Jul 2020</p>
+                        </div>
+                        <div class="pt-3">
+                            <img src="./assets/icons/pending_tag.svg" class="w-32 inline" alt="progress_tag">
+                        </div>
+                        <div class="pt-4 text-orange">
+                            <p  class="underline pointer " id="view-details"> View Details </p>
+                        </div>
+
+
+                        <div class="col-span-5 mt-6 horizontal-progress-bar flex flex-row  hidden text-left" id="vehicle-horizontal-progress">
+
+                            <!-- ARRIVAL MARK -->
+                            <div class="arrival flex flex-row flex-no-wrap">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    ARRIVAL
+                                    <br>
+                                    <span class="text-grey text-xs">Location A, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 9:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- arrival progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-6">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
                                 </div>
                             </div>
-                            <br>
+                            <!-- arrival progress bar -->
+                            <!-- ARRIVAL MARK -->
 
-                            <div class="table-row bg-white shadow  vehicles" >
-                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
-                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="parcel-box">
-                                    Vehicle 1
-                                </div>
-                                <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
-                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p  class=" number-plate" >
-                                        RJ 02 GB 2222
-                                    </p>
-                                </div>
-                                <div class="table-cell text-md align-middle text-grey font-bold pl-10" >
-                                    6 Jul 2020
-                                </div>
-                                <div class="table-cell text-md align-middle font-bold ">
-                                    <img src="./assets/icons/progress_tag.png" class="w-32" alt="in-progress">
-                                </div>
-                                <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline">View Details > </a>
+
+                            <!-- UNLOADING MARK -->
+                            <div class="unloading flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    UNLOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location B, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 11:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- unloading progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
                                 </div>
                             </div>
+                            <!-- unloading progress bar -->
+                            <!-- UNLOADING MARK -->
 
-                            <br>
 
-                            <div class="table-row hover:bg-white hover:shadow vehicles" style="border-radius: 7px;">
-                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
-                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
-                                    Vehicle 2
-                                </div>
-                                <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
-                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p class="number-plate">HR 1G 1JGD6S</p>
-                                </div>
-                                <div class="table-cell text-md align-middle text-grey font-bold pl-10" >
-                                    6 Jul 2020
-                                </div>
-                                <div class="table-cell text-sm align-middle font-bold ">
-                                    <img src="./assets/icons/dipatched_tag.png" class="w-32" alt="dispatched">
-                                </div>
-                                <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline">View Details > </a>
+                            <!-- LOADING MARK -->
+                            <div class="arrival flex flex-row  ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    LOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location C, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 12:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- LOADING progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-4">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
                                 </div>
                             </div>
+                            <!-- LOADING progress bar -->
+                            <!-- LOADING MARK -->
 
-                            <br>
-
-                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
-                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
-                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
-                                    Vehicle 3
-                                </div>
-                                <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
-                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p class="number-plate">HR 1G 1JGD6S</p>
-                                </div>
-                                <div class="table-cell text-md align-middle text-grey font-bold pl-10" >
-                                    6 Jul 2020
-                                </div>
-                                <div class="table-cell text-sm align-middle font-bold ">
-                                    <img src="./assets/icons/delayed_tag.png" class="w-32" alt="delayed">
-                                </div>
-                                <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline">View Details > </a>
-                                </div>
+                            <!-- DEPARTURE MARK -->
+                            <div class="arrival flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    DEPARTURE
+                                    <br>
+                                    <span class="text-grey text-xs">Location D, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 1:30 AM</span>
+                                </p>
                             </div>
+                            <!-- DEPARTURE MARK -->
 
-                            <br>
 
-                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
-                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
-                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
-                                    Vehicle 4
-                                </div>
-                                <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
-                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p class="number-plate ">HR 1G 1JGD6S</p>
-                                </div>
-                                <div class="table-cell text-md align-middle text-grey font-bold pl-10" >
-                                    6 Jul 2020
-                                </div>
-                                <div class="table-cell text-sm align-middle font-bold ">
-                                    <img src="./assets/icons/confirmed_tag.svg" class="w-32" alt="in-progress">
-                                </div>
-                                <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline">View Details > </a>
-                                </div>
-                            </div>
 
-                            <br>
-
-                            <div class="table-row hover:bg-white vehicles" style="border-radius: 7px;">
-                                <div class="table-cell text-md text-grey  font-bold pl-6 py-3">
-                                    <img src="./assets/icons/ic-parcel_box.png" class="inline "alt="box">
-                                    Vehicle 5
-                                </div>
-                                <div class="table-cell text-md align-middle text-center font-bold w-48" style="position:relative" >
-                                    <img src="./assets/icons/number_plate.svg" class="w-48"class=""alt="">
-                                    <p class="number-plate ">HR 1G 1JGD6S</p>
-                                </div>
-                                <div class="table-cell text-md align-middle text-grey font-bold pl-10" >
-                                    6 Jul 2020
-                                </div>
-                                <div class="table-cell text-sm align-middle font-bold ">
-                                    <img src="./assets/icons/rejected_tag.svg" class="w-32" alt="in-progress">
-                                </div>
-                                <div class="table-cell text-md text-orange align-middle font-bold ">
-                                    <a href="" class="underline">View Details > </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
+
+                    <!-- vehicle 2 -->
+                    <div class="vehicle-info-card grid grid-cols-5 p-3 mb-4  text-grey font-bold text-sm text-center" id="vehicle-info-card">
+                        <div class="text-left">
+                            <img src="./assets/icons/ic-parcel_box.png" alt="parcel-box" class="inline w-16" style="vertical-align: middle">
+                            Vehicle 2
+                        </div>
+                        <div class="relative pt-2" >
+                            <img src="./assets/icons/number_plate.svg" class="w-40 inline" alt="number_plate">
+                            <p class=" number-plate text-black">DL 13S 7817 </p>
+                        </div>
+                        <div class="pt-4 text-center">
+                            <p>6 Jul 2020</p>
+                        </div>
+                        <div class="pt-3">
+                            <img src="./assets/icons/confirmed_tag.svg" class="w-32 inline" alt="progress_tag">
+                        </div>
+                        <div class="pt-4 text-orange">
+                            <p  class="underline pointer" id="view-details"> View Details </p>
+                        </div>
+
+
+                        <div class="col-span-5 mt-6 horizontal-progress-bar flex flex-row  hidden text-left" id="vehicle-horizontal-progress">
+
+                            <!-- ARRIVAL MARK -->
+                            <div class="arrival flex flex-row flex-no-wrap">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    ARRIVAL
+                                    <br>
+                                    <span class="text-grey text-xs">Location A, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 9:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- arrival progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-6">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- arrival progress bar -->
+                            <!-- ARRIVAL MARK -->
+
+
+                            <!-- UNLOADING MARK -->
+                            <div class="unloading flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    UNLOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location B, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 11:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- unloading progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- unloading progress bar -->
+                            <!-- UNLOADING MARK -->
+
+
+                            <!-- LOADING MARK -->
+                            <div class="arrival flex flex-row  ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    LOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location C, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 12:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- LOADING progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-4">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- LOADING progress bar -->
+                            <!-- LOADING MARK -->
+
+                            <!-- DEPARTURE MARK -->
+                            <div class="arrival flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    DEPARTURE
+                                    <br>
+                                    <span class="text-grey text-xs">Location D, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 1:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- DEPARTURE MARK -->
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- vechicle 3 -->
+                    <div class="vehicle-info-card grid grid-cols-5 p-3 mb-4  text-grey font-bold text-sm text-center" id="vehicle-info-card">
+                        <div class="text-left">
+                            <img src="./assets/icons/ic-parcel_box.png" alt="parcel-box" class="inline w-16" style="vertical-align: middle">
+                            Vehicle 3
+                        </div>
+                        <div class="relative pt-2" >
+                            <img src="./assets/icons/number_plate.svg" class="w-40 inline" alt="number_plate">
+                            <p class=" number-plate text-black">DL 13S 7817 </p>
+                        </div>
+                        <div class="pt-4 text-center">
+                            <p>6 Jul 2020</p>
+                        </div>
+                        <div class="pt-3">
+                            <img src="./assets/icons/rejected_tag.svg" class="w-32 inline" alt="progress_tag">
+                        </div>
+                        <div class="pt-4 text-orange">
+                            <p  class="underline pointer" id="view-details"> View Details </p>
+                        </div>
+
+
+                        <div class="col-span-5 mt-6 horizontal-progress-bar flex flex-row  hidden text-left" id="vehicle-horizontal-progress">
+
+                            <!-- ARRIVAL MARK -->
+                            <div class="arrival flex flex-row flex-no-wrap">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    ARRIVAL
+                                    <br>
+                                    <span class="text-grey text-xs">Location A, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 9:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- arrival progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-6">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- arrival progress bar -->
+                            <!-- ARRIVAL MARK -->
+
+
+                            <!-- UNLOADING MARK -->
+                            <div class="unloading flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    UNLOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location B, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 11:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- unloading progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- unloading progress bar -->
+                            <!-- UNLOADING MARK -->
+
+
+                            <!-- LOADING MARK -->
+                            <div class="arrival flex flex-row  ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    LOADING
+                                    <br>
+                                    <span class="text-grey text-xs">Location C, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 12:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- LOADING progress bar -->
+                            <div class="w-24 h-2 rounded-full bg-gray mt-2 relative -ml-4">
+                                <!-- increase the width of this div to increase progress -->
+                                <div class="absolute top-0 left-0  h-2 bg-green rounded-full">
+
+                                </div>
+                            </div>
+                            <!-- LOADING progress bar -->
+                            <!-- LOADING MARK -->
+
+                            <!-- DEPARTURE MARK -->
+                            <div class="arrival flex flex-row ml-4 flex-no-wrap -ml-1">
+                                <span class="circle w-6 h-6 rounded-full bg-white inline-block flex-none"></span>
+                                <p class="text-black ml-2 text-sm flex-none">
+                                    DEPARTURE
+                                    <br>
+                                    <span class="text-grey text-xs">Location D, Noida</span>
+                                    <br>
+                                    <span class="text-black text-xs -mt-3">7 July, 1:30 AM</span>
+                                </p>
+                            </div>
+                            <!-- DEPARTURE MARK -->
+
+
+
+                        </div>
+                    </div>
+
+
+
                 </div>
 
                 <!-- total vehicles -->

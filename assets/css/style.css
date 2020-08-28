@@ -86,7 +86,7 @@ body {
 .number-plate {
     position: absolute;
     top:50%;
-    left:20%;
+    left:25%;
     transform: translate(0, -50%);
 }
 
@@ -98,7 +98,21 @@ body {
     letter-spacing: 1px;
 }
 
+.vehicle-info-card-active {
+    background: white;
+    border: 2px solid #ff7f34;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
 .vehicle-info-card {
+
+}
+
+.vehicle-info-card:hover {
+    background: white;
     border: 2px solid #ff7f34;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -159,6 +173,10 @@ body {
 
 .w-350px {
     width: 350px;
+}
+
+.heading p {
+    padding-top: 10px;
 }
 
 .text-grey {

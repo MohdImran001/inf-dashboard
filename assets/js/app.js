@@ -1,4 +1,21 @@
 $(document).ready(function() {
+    $("[id='vehicle-info-card']").click(function(e) {
+        $('.vehicle-info-card').removeClass('vehicle-info-card-active');
+
+        $(e.currentTarget).addClass('vehicle-info-card-active');
+    });
+
+    // //this code hides and shows the horizontal progress bar of parcel when user click view details button on vehicle info Card\
+    $("[id='view-details']").click(function(e) {
+        let el = $(e.currentTarget).parent().next();
+        if(el.hasClass('hidden')) {
+            el.removeClass('hidden');
+        }
+        else {
+            el.addClass('hidden');
+        }
+    });
+
     // this code hides and show the status table when load status btn is clicked
     let f = -1;
     $('#load-status-btn').click(function() {
@@ -33,13 +50,6 @@ $(document).ready(function() {
     });
 
 
-    //this code hides and shows the horizontal progress bar of parcel when user click view details button on vehicle info Card\
-    let flag = -1;
-    $('#view-details').click(function() {
-        if(flag == -1)
-            $('#vehicle-horizontal-progress').css("display", "flex");
-        else
-            $('#vehicle-horizontal-progress').css("display", "none");
-        flag *= -1;
-    })
+
+
 });
